@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>WebRTC using peer</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.peerjs.com/0.3/peer.js"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+  
+</head>
+
+<body>
+
+<div>
+<div id="video-container">
+  Outer
+  <video id="thier-video" class="their-video" autoplay></video>
+  <video id="my-video" muted="false" class="my-video" autoplay></video> Own
+</div>
+
+  <div>
+    <h1>strimyyyyyy</h1>
+    <div id="step1">
+      <p>zatwierdz polaczenie</p>
+      <p id="step1-error">blad blad w dostepie do kaerki</p>
+      <a href="#!" class="button" id="step1-retry">ponow</a>
+    </div>
+  </div>
+
+  <div id="step2">
+    <p>Twoje id: <span id="my-id">...</span></p>
+    <p>przy pomocy tego id inni moga zadzwonic</p>
+    <p><span id="subhead">Zadzwon</span><br>
+        <input type="text" placeholder="tu wpisz id rozmowcy" id="callto-id">
+        <a href="#!" id="make-call" class="button">Dzwon</a></p>
+  </div>
+
+    <div id="step3">
+        <p>trwa rozmowa z: <span id="their-id">...</span></p>
+        <p><a href="#!" class="button" id="end-call">Zakoncz</a></p>
+    </div>
+
+
+</div>
+
+</body>
+</html>
